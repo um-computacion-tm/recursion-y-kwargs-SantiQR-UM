@@ -23,9 +23,7 @@ database= {
 
 
 # *args: se maneja como lista, son los parametros sin nombre.
-# **kwargs: se maneja como diccionario, devuelve la key del primer 
-#           diccionario que contiene esos valores en el segundo 
-#           diccionario.
+# **kwargs: se maneja como diccionario, es el diccionario padre.
 def buscar_datos(*args, **kwargs):
     counter = 0
     for key, value in kwargs.items():
